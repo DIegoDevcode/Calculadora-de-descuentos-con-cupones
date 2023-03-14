@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de cupones</title>
+</head>
+<body>
+    <header>
+        <h2>Ingresa tu cupon de descuento</h2>
+        <img src="./Icons/cupon.png" alt="">
+    </header>
+    <main>
+        <form action="">
+            <section>
+                <label for="price-tag" class="price-class">Precio sin descuento</label>
+                <input type="number" id="price-tag" placeholder="Precio">
+                <p>$</p>
+            </section>
+            <section id="cupon-section">
+                <label for="cupon" class="cupon-label">Cupon de Descuento</label>
+                <input type="text" id="cupon" placeholder="Agrega un codigo de descuentos">
+            </section>
+            <button type="button" class="button-calcule">Aplicar Cupon</button>
+            <p class="precio-container"> Precio final:
+                <span class="result inactive"></span>
+                <span class="inactive warning"></span>
+            </p>
+            <p class="discount-container">
+                Descuento aplicado:
+                <span class="discount final inactive "></span>
+            </p>
+            <button type="reset" class="button-calcule reset">Limpiar</button>
+        </form>
+    </main>
+</body>
+</html>
